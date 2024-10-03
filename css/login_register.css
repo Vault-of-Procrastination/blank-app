@@ -1,0 +1,57 @@
+{
+	background-color: whitesmoke;
+	outline: 2px solid black;
+	border-radius: 2px;
+}
+/*header*/
+div[data-testid='stHeadingWithActionElements'] {
+	text-align: center;
+}
+
+/*input Text with headers*/
+div[data-testid='stMarkdownContainer'] p{
+	font-size: x-large;
+	font-weight: 500;
+	margin-left: 20px;
+}
+div[data-testid='stTextInputRootElement'] {
+	background-color: white;
+	margin-left: 10px;
+	width: 95%;
+	border-color: black;
+}
+div[data-testid='stTextInputRootElement'] button{
+	background-color: white;
+}
+div[data-testid='stTextInputRootElement'] input{
+	background-color: white;
+}
+
+/*buttons*/
+div[data-testid='stButton'] {
+	padding-bottom: 10px;
+}
+div[data-testid='stButton'] button{
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+div[data-testid='stButton'] button div p{
+	margin-left: 0px;
+	font-size: x-large;
+	font-weight: 500;
+	text-align: center;
+}
+
+/*alert message*/
+div[data-testid='stAlert'] {
+	width: 90%;
+    margin-left: 5%;
+    padding-bottom: 10px;
+}
+div[data-testid='stAlert'] div div div div div p{
+	margin-left: 2.5%;
+	width: calc(100% - 1.75rem);
+    text-align: center;
+	font-size: larger;
+}

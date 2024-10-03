@@ -1,0 +1,16 @@
+div[data-testid='stSelectbox'] label div p{
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+div[data-testid='stSelectbox'] div[data-baseweb='select'] div{
+    background-color: #d3d3d3;
+}
+div[data-testid='stMultiSelect'] label div p{
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+div[data-testid='stSelectbox'] div[data-baseweb='select'] div{
+    background-color: #d3d3d3;
+}

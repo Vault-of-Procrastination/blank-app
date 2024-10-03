@@ -1,0 +1,9 @@
+div[data-testid='stApp'] {
+	background-color: gray
+}
+header[data-testid='stHeader'] {
+	background-color: gray
+}
+[data-testid='stSidebar'] {
+	display: none;
+} 

@@ -1,0 +1,9 @@
+div[data-testid='stApp'] {
+	background-color: white;
+}
+header[data-testid='stHeader'] {
+	background-color: red;
+}
+div[data-testid='stVirtualDropdown'] div div li[role='option'] {
+    background-color: #d3d3d3;
+}

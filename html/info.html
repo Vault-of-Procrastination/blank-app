@@ -1,0 +1,113 @@
+<style>
+    table.table-info {
+        border: 3px solid #00000000;
+        margin: none auto none auto;
+        font-size: 1.0em;
+        font-family: sans-serif;
+  	}
+	table.table-info thead th{
+    	background-color: #E0E0E0;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    table.table-info tbody td{
+    	padding: 7px;
+        border-radius: 5px;
+    }
+    table.table-info tbody td.header {
+        width: 300px;
+        min-width: 100px;
+    }
+    table.table-info tbody td.value {
+        width: 600px;
+        min-width: 300px;
+    }
+    
+    table.table-info tr:nth-child(even) {
+        background-color: #FFFFFF;
+    }
+    table.table-info tr:nth-child(odd) {
+        background-color: #DFE7C0;
+    }
+    
+    table.table-info tbody tr.etiquetas td.value ul{
+        list-style: none;
+    }
+    table.table-info tbody tr.etiquetas td.value ul li{
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 20px;
+        background-color: red;
+    }
+    
+    table.table-info tbody tr.estatus td.value p{
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 20px;
+    }
+    table.table-info tbody tr.estatus td.value p.negativo{
+        background-color: red;
+    }
+    table.table-info tbody tr.estatus td.value p.positivo{
+        background-color: green;
+    }
+    table.table-info tbody tr.estatus td.value p.neutro{
+        background-color: yellow;
+    }
+    
+    table.table-info tbody tr:hover {
+        background-color: #ffffffff;
+    }
+</style>
+<table class="table-info">
+    <thead>
+        <tr>
+            <th>Header</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="categoria">
+            <td class="header">Categoria</td>
+            <td class="value">%(categoria)s</td>
+        <tr class="etiquetas">
+            <td class="header">Etiquetas</td>
+            <td class="value">
+                <ul>
+                    %(etiquetas)s
+                </ul>
+            </td>
+        <tr class="canal">
+            <td class="header">Canal</td>
+            <td class="value">%(canal)s</td>
+        <tr class="periodista">
+            <td class="header">Periodista</td>
+            <td class="value">%(periodista)s</td>
+        <tr class="funcionario">
+            <td class="header">Funcionario</td>
+            <td class="value">%(funcionario)s</td>
+        <tr class="dependencia">
+            <td class="header">Dependencia</td>
+            <td class="value">%(dependencia)s</td>
+        <tr class="convenio">
+            <td class="header">Convenio</td>
+            <td class="value">%(convenio)s</td>
+        <tr class="partido">
+            <td class="header">Partido</td>
+            <td class="value">%(partido)s</td>
+        <tr class="candidato">
+            <td class="header">Candidato</td>
+            <td class="value">%(candidato)s</td>
+        <tr class="fecha">
+            <td class="header">Fecha</td>
+            <td class="value">%(fecha)s</td>
+        <tr class="hora">
+            <td class="header">Hora</td>
+            <td class="value">%(hora)s</td>
+        <tr class="estatus">
+            <td class="header">Estatus</td>
+            <td class="value"><p class="%(class_estatus)s">%(estatus)s</p></td>
+    </tbody>
+</table>
